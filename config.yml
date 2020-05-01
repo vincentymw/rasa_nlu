@@ -1,0 +1,26 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: zh
+pipeline:
+  - name: JiebaTokenizer           # 分词器
+  - name: RegexFeaturizer               # 正则
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer      # featurizes文本基于词
+  - name: CountVectorsFeaturizer      # featurizes文本基于n-grams character，保留词边界
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+  - name: EntitySynonymMapper           # 同义词映射
+  - name: ResponseSelector
+    epochs: 100
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+  - name: MappingPolicy

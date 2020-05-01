@@ -1,0 +1,77 @@
+2020-03-09 13:08:12,195 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-03-09 13:08:37,637 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/api'
+Traceback (most recent call last):
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /api not found
+2020-03-09 13:11:01,567 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations'
+Traceback (most recent call last):
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations not found
+2020-03-09 14:01:28,582 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-03-09 14:02:34,344 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-03-09 14:04:18,834 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-03-09 14:11:22,172 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-03-09 14:11:38,829 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2020-03-09 14:11:41,001 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2020-03-09 14:13:03,143 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/default'
+Traceback (most recent call last):
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/default not found
+2020-03-09 14:13:14,070 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/default'
+Traceback (most recent call last):
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/default not found
+2020-03-09 14:16:02,039 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/default/tracker'
+Traceback (most recent call last):
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 474, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method POST not allowed for URL /conversations/default/tracker
+2020-03-09 14:27:32,385 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/default/tracker/events'
+Traceback (most recent call last):
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/ye/myprojects/rasa_nlu/venv/lib/python3.6/site-packages/sanic/router.py", line 474, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /conversations/default/tracker/events
